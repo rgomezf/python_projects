@@ -1,0 +1,25 @@
+-[ RECORD 1308 ]-------+---------------------------------------
+from_zone              | ZONE1
+to_zone                | ZONE2
+severity               | 1
+access_type            | BLOCK_ALL
+services_collection_id |
+usp                    | USP-NAME-1
+rule_uid               | {92c12615-e989-4ba2-aa80-df62a14d25b5}
+domain                 | Default
+device_id              | 138
+rule_num               | 19
+version_id             | 20065
+-[ RECORD 1309 ]-------+---------------------------------------
+from_zone              | ZONE3
+to_zone                | ZONE1
+severity               | 1
+access_type            | BLOCK_ALL
+services_collection_id |
+usp                    | USP-NAME-2
+rule_uid               | {024157cb-999b-4f7b-b6e9-9e35e66cec62}
+domain                 | Default
+device_id              | 236
+rule_num               | 11
+version_id             | 20163
+-[ RECORD 1310 ]-------+---------------------------------------
