@@ -24,21 +24,14 @@ def main():
 
 	final_collection = unify_collections(COLLECTION_ONE, COLLECTION_TWO)
     
-	print(next(final_collection))
+	print(final_collection)
 
 
 def unify_collections(first_collection, second_collection):
 	result_collection = defaultdict(list)
-
-	for key, value in first_collection:
-		if result_collection.get(key) != value:
-			result_collection[key].append(value)
-
-	for key, value in second_collection:
-		if result_collection.get(key) != value:
-			result_collection[key].append(value)
-
-	for item in result_collection:
+        
+        result_collection.update(List(set([data for data in COLLECTION_ONE if COLLECTION_TWO.count(ele) > 0])))
+	for item, value in result_collection.items():
 	    yield "{}: {}".format(item, result_collection[item])
 	
 if __name__ == '__main__':
